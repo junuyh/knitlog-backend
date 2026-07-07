@@ -7,3 +7,9 @@ spring:
     username: root
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update    # Entity 구조를 보고 DB 테이블을 생성하거나 변경
+    show-sql: true
+    open-in-view: false
