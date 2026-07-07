@@ -22,4 +22,26 @@ public class YarnInfo {
     private Integer lengthPer100g;
     private String memo;
 
+    public YarnInfo(String brand, String name, String season, String yarnType,
+                    String thickness, Integer lengthPer100g, String memo) {
+        this.brand = brand;
+        this.name = name;
+        this.season = season;
+        this.yarnType = yarnType;
+        this.thickness = thickness;
+        this.lengthPer100g = lengthPer100g;
+        this.memo = memo;
+    }
+
+    public void update(String brand, String name, String season, String yarnType,
+                        String thickness, Integer lengthPer100g, String memo) {
+        this.brand = brand;
+        this.name = name;
+        this.season = season;
+        this.yarnType = yarnType;
+        this.thickness = thickness;
+        this.lengthPer100g = lengthPer100g;
+        this.memo = memo;
+    }
+
 }
